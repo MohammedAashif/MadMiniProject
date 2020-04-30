@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="80dp"
+    tools:context=".SignUp">
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name :"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorText" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email :"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorText" />
+
+    app:passwordToggleEnabled="true"
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password :"
+        android:inputType="textPassword"
+        android:textColor="@color/colorText" />
+
+    app:passwordToggleEnabled="true"
+    <EditText
+        android:id="@+id/c_Pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password :"
+        android:inputType="textPassword"
+        android:textColor="@color/colorText" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:backgroundTint = "@color/colorPrimary"
+        android:textColor = "@android:color/background_dark"
+        android:text = "Sign-Up"
+        android:layout_marginTop = "25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+
+</LinearLayout>
